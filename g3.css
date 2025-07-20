@@ -18,16 +18,28 @@
     color: #727272;
 }
 .bg-light{
-    background-color: #b89d7af3;
+    background-color: rgba(255, 144, 14, 0.1);
 }
 
-
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
 
 /* header style */
+.brand{
+    font-weight: bold;
+    font-size: 45px;
+}
 .navbar{
     display: flex;
     justify-content: space-between;
-    bac
+    align-items: center;
 }
 .nav-item{
     list-style: none;
@@ -41,4 +53,26 @@
 .navbar , .banner{
     max-width: 1440px;
     margin: 0 auto;
+}
+/* banner style */
+.banner-contant{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 64px;
+}
+.banner-image{
+    width: 100%;
+}
+
+/* respnsive media */
+@media screen and (max-width : 576px) {
+    .navbar , .nav-links{
+        flex-direction: column;
+    }
+    
 }
